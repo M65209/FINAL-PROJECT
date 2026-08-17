@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservations - Restaurant Lelebotte</title>
+  <link rel="stylesheet" href="../style/reset.css">
+  <link rel="stylesheet" href="../style/general.css">
+  <link rel="stylesheet" href="../style/responsive.css">
+</head>
+<body>
+
+  <!-- Header is injected by js/layout.js -->
+  <div id="site-header"></div>
+
+  <section class="section">
+    <p class="section-label text-center">Experience Excellence</p>
+    <h1 class="section-title text-center">Secure Your Table</h1>
+    <p class="section-text text-center" style="margin: 0 auto 30px;">
+      We invite you to join us for an evening of culinary artistry. Please provide your details below.
+    </p>
+
+    <div class="reserve-box">
+      <div class="reserve-image">
+        <img src="../images/interior2.jpg" alt="Restaurant dining room">
+      </div>
+      <div class="reserve-form">
+        <form action="#" method="get">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="text" id="date" name="date" placeholder="mm/dd/yyyy">
+            </div>
+            <div class="form-group">
+              <label for="time">Time</label>
+              <input type="text" id="time" name="time" placeholder="--:--">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="area">Reservation Area</label>
+              <select id="area" name="area">
+                <option value="Main Dining Room">Main Dining Room</option>
+                <option value="Private Dining Room">Private Dining Room</option>
+                <option value="Bar & Lounge">Bar & Lounge</option>
+                <option value="Garden Terrace">Garden Terrace</option>
+                <option value="Rooftop Deck">Rooftop Deck</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="guests">Number of Guests</label>
+              <select id="guests" name="guests">
+                <option value="">Select party size</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6+ Guests</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com">
+            </div>
+          </div>
+          <button type="submit" class="btn">Confirm Reservation Request</button>
+          <p style="font-size: 12px; color: #999; margin-top: 12px; text-align: center;">
+            By booking, you agree to our terms of service and privacy policy.
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <div class="cards" style="margin-top: 30px;">
+      <div class="card">
+        <h3>Choose Your Area</h3>
+        <p>Book a table in the Main Dining Room, the Private Dining Room, the Bar & Lounge, the Garden Terrace or the Rooftop Deck.</p>
+      </div>
+      <div class="card">
+        <h3>Dietary Needs</h3>
+        <p>Mention any allergies or restrictions. Our chefs are highly accommodating.</p>
+      </div>
+      <div class="card">
+        <h3>Group Bookings</h3>
+        <p>For parties larger than 6, please call us to discuss private dining options.</p>
+      </div>
+      <div class="card">
+        <h3>Cancellation</h3>
+        <p>We kindly ask for 24-hour notice for cancellations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer is injected by js/layout.js -->
+  <div id="site-footer"></div>
+
+  <script src="../js/layout.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

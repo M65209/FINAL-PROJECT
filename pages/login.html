@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Login - Restaurant Lelebotte</title>
+  <link rel="stylesheet" href="../style/reset.css">
+  <link rel="stylesheet" href="../style/general.css">
+  <link rel="stylesheet" href="../style/responsive.css">
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <section class="section">
+    <p class="section-label text-center">Staff Area</p>
+    <h1 class="section-title text-center">Login</h1>
+
+    <div class="login-wrapper">
+      <div class="login-box">
+        <h2>Welcome Back</h2>
+        <p>Sign in to open the admin dashboard.</p>
+
+        <form id="login-form">
+          <div class="form-group" style="margin-bottom: 15px;">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="AMA">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="••••••••">
+          </div>
+          <button type="submit" class="btn">Log In</button>
+          <p class="form-error" id="login-error">Wrong username or password. Please try again.</p>
+        </form>
+
+        <p class="login-hint">Demo login  Username: AMA &nbsp;|&nbsp; Password: 65209</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="../js/layout.js"></script>
+  <script src="../js/auth.js"></script>
+</body>
+</html>

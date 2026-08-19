@@ -46,7 +46,7 @@ function createHeader() {
   return (
     '<header class="header">' +
       '<div class="header-inner">' +
-        '<a href="' + rootPath + 'index.html" class="logo">Restaurant Lelebotte</a>' +
+        '<a href="' + rootPath + 'index.html" class="logo">Bella Cucina</a>' +
         '<button class="menu-btn" aria-label="Open menu">☰</button>' +
         '<nav class="nav">' +
           navHTML +

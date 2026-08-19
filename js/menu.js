@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-  // Where the tabs and the menu sections will be placed
+  
   const tabsContainer = document.getElementById("menu-tabs");
   const menuContainer = document.getElementById("menu-container");
 

@@ -19,9 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const categories = window.siteData.fullMenu;
 
-  // ============================================
-  // 1. BUILD ONE MENU CARD (as an HTML string)
-  // ============================================
+  
   function buildItemCard(item) {
     return (
       '<div class="menu-item">' +
@@ -38,9 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   }
 
-  // ============================================
-  // 2. BUILD THE TABS ("All" + one per category)
-  // ============================================
+  
   let tabsHTML = '<a href="#" class="active" data-category="all">All</a>';
 
   categories.forEach(function (category) {
@@ -49,9 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   tabsContainer.innerHTML = tabsHTML;
 
-  // ============================================
-  // 3. BUILD THE MENU SECTIONS (one per category)
-  // ============================================
+ 
   let menuHTML = "";
 
   categories.forEach(function (category) {
@@ -70,9 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   menuContainer.innerHTML = menuHTML;
 
-  // ============================================
-  // 4. FILTERING: show only the clicked category
-  // ============================================
+ 
   const tabs = tabsContainer.querySelectorAll("a");
   const sections = menuContainer.querySelectorAll(".menu-category");
 
@@ -88,23 +80,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
   tabs.forEach(function (tab) {
     tab.addEventListener("click", function (event) {
-      // Stop the page from jumping to the #id anchor
+      
       event.preventDefault();
 
       const categoryId = tab.getAttribute("data-category");
 
-      // Highlight only the clicked tab
+      
       tabs.forEach(function (t) {
         t.classList.remove("active");
       });
       tab.classList.add("active");
 
-      // Show only the matching section (or everything for "All")
+     
       showCategory(categoryId);
     });
   });
 
-  // Start on "All" so the customer sees the full menu first
+ 
   showCategory("all");
 
 });

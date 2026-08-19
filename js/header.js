@@ -3,7 +3,7 @@ const header = document.getElementById('site-header');
 const headerHTML =`
 <header class="header">
     <div class="header-inner">
-      <a href="index.html" class="logo">Restaurant Lelebotte</a>
+      <a href="index.html" class="logo">Bella Cucina</a>
       <button class="menu-btn">☰</button>
       <nav class="nav">
         <a href="index.html" class="active">Home</a>

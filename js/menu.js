@@ -1,23 +1,4 @@
-/**
- * menu.js
- * --------
- * Builds the Menu page tabs (Starters / Main Course / Desserts / ...)
- * and menu cards automatically from the data in js/data.js.
- *
- * WHY: This is what makes the site "scalable". A new restaurant just
- * edits the list in js/data.js (categories + dishes). This file will
- * automatically create the right number of tabs and the right cards,
- * so nobody has to copy/paste HTML by hand.
- *
- * WHAT IT DOES ON CLICK:
- * - Click "All"          -> show every category
- * - Click "Starters"     -> show ONLY the Starters section
- * - Click "Main Course"  -> show ONLY the Main Course section
- * - Click "Desserts"     -> show ONLY the Desserts section
- *
- * Safe to include on other pages: it does nothing if the menu
- * container is not found on the page.
- */
+
 
 document.addEventListener("DOMContentLoaded", function () {
 
